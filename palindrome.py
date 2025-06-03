@@ -16,14 +16,14 @@ def main():
     i = 999
     x = i
     pallist = []
-    while len(str(i))==3:
-        while len(str(x))==3:
+    while len(str(i)) == 3:
+        while len(str(x)) == 3:
             # x * i and convert it to a string for the ispalandrome function
             result = str(x * i)
             # should return BOOL
             palresult = ispalendrome(result)
             if palresult:
-                f'{x} * {i} = {result}'
+                print(f'{x} * {i} = {result}')
                 pallist.append(int(result))
                 x -= 1
             else:
